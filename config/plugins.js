@@ -1,16 +1,5 @@
-module.exports = ({ env }) => ({
-  "users-permissions": {
-    config: {
-      jwtSecret: env("JWT_SECRET"),
-    },
-  },
-  upload: {
-    config: {
-      provider: "local",
-      actionOptions: {
-        upload: {},
-        delete: {},
-      },
-    },
-  },
+'use strict';
+
+module.exports = () => ({
+  'content-type-builder': { enabled: true },
 });
